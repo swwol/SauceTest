@@ -21,7 +21,8 @@ platform :ios do
 	run_tests(project: 'SauceTest.xcodeproj') 
   end
    lane :build do
-  	 gym(project: 'SauceTest.xcodeproj')
+  	 gym(project: 'SauceTest.xcodeproj',
+  	 	codesigning_identity: 'iPhone Distribution: Nice Agency Limited')
    end
 end
 
