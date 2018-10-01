@@ -21,6 +21,14 @@ platform :ios do
 	run_tests(project: 'SauceTest.xcodeproj') 
   end
    lane :build do
+
+update_project_provisioning(
+  xcodeproj: "SauceTest.xcodeproj",
+  profile: "./SauceTesttSamBitrise.mobileprovision", # optional if you use sigh
+  build_configuration: "Release",
+  code_signing_identity: 'iPhone Distribution: Nice Agency Limited' # optionally specify the codesigning identity
+)
+
   	 gym(project: 'SauceTest.xcodeproj',
   	 	codesigning_identity: 'iPhone Distribution: Nice Agency Limited',
   	 	export_method: 'enterprise')
