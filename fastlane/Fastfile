@@ -39,7 +39,7 @@ lane :simulator do
            scheme: "SauceTest",
            xcargs: "-configuration 'Debug' -sdk 'iphonesimulator' -destination 'platform=iOS Simulator,name=iPhone 6,OS=12.0'"
            )
-zip(path: "SauceTest.app",
+zip(path: "./build-dir/SauceTest.app",
     output_path: "Latest.app.zip"
 )
  end 
