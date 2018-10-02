@@ -22,16 +22,18 @@ platform :ios do
   end
    lane :build do
 
-update_project_provisioning(
-  xcodeproj: "SauceTest.xcodeproj",
-  profile:  ENV['BITRISE_PROVISION_URL'], # optional if you use sigh
-  build_configuration: "Release",
-  code_signing_identity: 'iPhone Distribution: Nice Agency Limited' # optionally specify the codesigning identity
-)
+
 
   	 gym(project: 'SauceTest.xcodeproj',
   	 	codesigning_identity: 'iPhone Distribution: Nice Agency Limited',
-  	 	export_method: 'enterprise')
+
+      export_options: {
+  method: "enterprise",
+  provisioningProfiles: { 
+    "agency.nice.SauceTestt" => "SauceTesttSamBitrise"
+  },
+  teamID: "6PR9BVQYVX"
+})
    end
 end
 
