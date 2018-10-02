@@ -36,15 +36,13 @@ platform :ios do
 lane :simulator do
 
   xcodebuild(project: 'SauceTest.xcodeproj',
-           scheme: "SaceTest",
-           xcargs: "-configuration 'Debug' -sdk 'iphonesimulator11.3' -destination 'generic/platform=iOS Simulator'"
+           scheme: "SauceTest",
+           xcargs: "-configuration 'Debug' -sdk 'iphonesimulator' -destination 'platform=iOS Simulator'"
            )
 zip(path: "./simulator/Build/Products/Debug-iphonesimulator/SauceTest",
     output_path: "./build/SauceTest.app.zip"
 )
-
  end 
-
 end
 
 
