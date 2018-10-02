@@ -37,7 +37,7 @@ lane :simulator do
 
   xcodebuild(project: 'SauceTest.xcodeproj',
            scheme: "SauceTest",
-           xcargs: "-configuration 'Debug' -sdk 'iphonesimulator' -destination 'platform=iOS Simulator,name=iPhone 6,OS=12.0’'"
+           xcargs: "-configuration 'Debug' -sdk 'iphonesimulator' -destination 'platform=iOS Simulator,name=iPhone 6,OS=12.0'"
            )
 zip(path: "./simulator/Build/Products/Debug-iphonesimulator/SauceTest",
     output_path: "./build/SauceTest.app.zip"
