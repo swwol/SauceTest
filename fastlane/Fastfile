@@ -18,7 +18,8 @@ default_platform(:ios)
 platform :ios do
   desc "builds app and runs ui tests"
   lane :test do
-	run_tests(project: 'SauceTest.xcodeproj') 
+	run_tests(project: 'SauceTest.xcodeproj',
+            output_directory: ENV['BITRISE_SOURCE_DIR']) 
   end
 
    lane :build do
