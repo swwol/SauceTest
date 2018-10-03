@@ -38,10 +38,10 @@ lane :simulator do
   xcodebuild(project: 'SauceTest.xcodeproj',
            scheme: "SauceTest",
            configuration: "Debug",
-           xcargs: "-sdk iphonesimulator SYMROOT='/var/tmp/'"
+           xcargs: "-sdk iphonesimulator SYMROOT= #{ENV['BITRISE_SOURCE_DIR']}"
            )
 
-zip(path: "/var/tmp/Debug-iphonesimulator/SauceTest.app",
+zip(path: "#{ENV['BITRISE_SOURCE_DIR']}/Debug-iphonesimulator/SauceTest.app",
   output_path: "#{ENV['BITRISE_SOURCE_DIR']}/SauceTest.zip")
  end 
 end
