@@ -11,6 +11,12 @@ class ViewController: UIViewController {
         feature4()
     }
 
+    func feature5() {
+        
+        print ("feature 5")
+        
+    }
+    
     @IBAction func button1Pressed(_ sender: UIButton) {
         label.text = "Button 1 was pressed"
         doSomethingUntested()
