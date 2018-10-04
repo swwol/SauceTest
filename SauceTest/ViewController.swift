@@ -14,6 +14,7 @@ class ViewController: UIViewController {
         label.text = "Button 1 was pressed"
         doSomethingUntested()
         doSomethingEle()
+        doSomethingElseAgain()
     }
     
     @IBAction func button2Pressed(_ sender: UIButton) {
@@ -25,6 +26,10 @@ class ViewController: UIViewController {
     }
     
     func doSomethingEle() {
+        print ("this is another untested function")
+    }
+    
+    func doSomethingElseAgain() {
         print ("this is another untested function")
     }
 }
