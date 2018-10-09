@@ -22,6 +22,11 @@ class ViewController: UIViewController {
         print ("feature 6")
         
     }
+    func feature7() {
+        
+        print ("feature 7")
+        
+    }
     
     
     @IBAction func button1Pressed(_ sender: UIButton) {
