@@ -55,7 +55,7 @@ class ViewController: UIViewController {
     
     func fkk() {
         
-        print("fkk")
+        print("fkkk")
         
     }
     @IBAction func button2Pressed(_ sender: UIButton) {
