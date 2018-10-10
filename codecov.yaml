@@ -5,7 +5,3 @@ comment:
   require_base: no        # [yes :: must have a base report to post]
   require_head: no       # [yes :: must have a head report to post]
   branches: null
-coverage:
-  precision: 2
-  round: down
-  range: "95...100"
