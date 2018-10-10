@@ -53,6 +53,11 @@ class ViewController: UIViewController {
         
     }
     
+    func fkk() {
+        
+        print("fkkk")
+        
+    }
     @IBAction func button2Pressed(_ sender: UIButton) {
           label.text = "Button 2 was pressed"
     }
