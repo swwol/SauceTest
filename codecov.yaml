@@ -9,5 +9,3 @@ coverage:
   precision: 2
   round: down
   range: "20...100"
-codecov:
-  bot: "nicecodebot"
