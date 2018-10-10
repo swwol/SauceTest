@@ -51,6 +51,7 @@ class ViewController: UIViewController {
         feature8()
         feature9()
         fkk()
+        blah()
     }
     
     func fkk() {
