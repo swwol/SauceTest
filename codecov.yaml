@@ -8,4 +8,4 @@ comment:
 coverage:
   precision: 2
   round: down
-  range: "95...100"
+  range: "20...100"

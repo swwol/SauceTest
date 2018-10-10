@@ -49,6 +49,8 @@ class ViewController: UIViewController {
         feature6()
         feature7()
         feature8()
+        feature9()
+        
     }
     
     @IBAction func button2Pressed(_ sender: UIButton) {
