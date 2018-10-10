@@ -38,11 +38,7 @@ class ViewController: UIViewController {
         print ("feature 9")
         
     }
-    func feature10() {
-        
-        print ("feature 10")
-        
-    }
+    
     
     @IBAction func button1Pressed(_ sender: UIButton) {
         label.text = "Button 1 was pressed"
@@ -53,6 +49,8 @@ class ViewController: UIViewController {
         feature6()
         feature7()
         feature8()
+        feature9()
+        
     }
     
     @IBAction func button2Pressed(_ sender: UIButton) {
