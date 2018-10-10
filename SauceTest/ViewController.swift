@@ -45,6 +45,10 @@ class ViewController: UIViewController {
         doSomethingUntested()
         doSomethingEle()
         doSomethingElseAgain()
+        feature5()
+        feature6()
+        feature7()
+        feature8()
     }
     
     @IBAction func button2Pressed(_ sender: UIButton) {
