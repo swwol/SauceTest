@@ -55,7 +55,7 @@ class ViewController: UIViewController {
     }
     
     func fkk() {
-        print("fkkkght")
+        print("fkkkghllllt")
     }
     
     func blah() {
