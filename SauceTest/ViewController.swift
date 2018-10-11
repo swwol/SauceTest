@@ -50,13 +50,16 @@ class ViewController: UIViewController {
         feature7()
         feature8()
         feature9()
-        
+        fkk()
+        blah()
     }
     
     func fkk() {
-        
         print("fkkk")
-        
+    }
+    
+    func blah() {
+        print ("blah")
     }
     @IBAction func button2Pressed(_ sender: UIButton) {
           label.text = "Button 2 was pressed"
